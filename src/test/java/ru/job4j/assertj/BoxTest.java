@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class BoxTest {
 
     @Test
-    void testWhatsThis() {
+    void testWhat() {
         Box box1 = new Box(0, 10);
         Box box2 = new Box(4, 10);
         assertThat(box1.whatsThis()).isEqualTo("Sphere");
@@ -15,7 +15,7 @@ class BoxTest {
     }
 
     @Test
-    void testGetNumberOfVertices() {
+    void testGetNumber() {
         Box box1 = new Box(0, 10);
         Box box2 = new Box(4, 10);
         assertThat(box1.getNumberOfVertices()).isEqualTo(0);
@@ -23,7 +23,7 @@ class BoxTest {
     }
 
     @Test
-    void testIsExist() {
+    void testEx() {
         Box box1 = new Box(0, 10);
         Box box2 = new Box(4, 0);
         assertThat(box1.isExist()).isTrue();
@@ -31,7 +31,7 @@ class BoxTest {
     }
 
     @Test
-    void testGetArea() {
+    void testGet() {
         Box box1 = new Box(0, 5);
         Box box2 = new Box(4, 10);
         assertThat(box1.getArea()).isEqualTo(4 * Math.PI * (5 * 5));
