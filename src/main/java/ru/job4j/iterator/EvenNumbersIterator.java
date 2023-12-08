@@ -23,7 +23,7 @@ public class EvenNumbersIterator implements Iterator<Integer> {
     @Override
     public Integer next() {
         if (!hasNext()) {
-            throw new NoSuchElementException();
+            throw new NoSuchElementException("Error");
         }
         return data[index++];
     }
