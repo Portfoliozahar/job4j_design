@@ -55,16 +55,24 @@ public class Generics {
         generics.printObject(third);
         System.out.println();
 
-        //generics.printBoundedWildCard(first);
+
+        /**
+         * generics.printBoundedWildCard(first);
+         */
+
         generics.printBoundedWildCard(second);
         generics.printBoundedWildCard(third);
         System.out.println();
+        /**
+         * generics.printLowerBoundedWildCard(first);
+         */
 
-        //generics.printLowerBoundedWildCard(first);
         generics.printLowerBoundedWildCard(second);
-        //generics.printLowerBoundedWildCard(third);
-    }
+        /**
+         * generics.printLowerBoundedWildCard(third);
+         */
 
+    }
 
     public <T> void printObject(List<T> list) {
         for (Iterator<T> iterator = list.iterator(); iterator.hasNext();) {
@@ -73,7 +81,6 @@ public class Generics {
         }
     }
 
-    // элементоы с ограниченным подстановочным символом
     public void printBoundedWildCard(List<? extends Predator> list) {
         for (Iterator<? extends Predator> iterator = list.iterator(); iterator.hasNext();) {
             Object next = iterator.next();
@@ -81,7 +88,6 @@ public class Generics {
         }
     }
 
-    //  элементы с ограниченным нижним подстановочным символом
     public void printLowerBoundedWildCard(List<? super Predator> list) {
         for (Iterator<? super Predator> iterator = list.iterator(); iterator.hasNext();) {
             Object next = iterator.next();
