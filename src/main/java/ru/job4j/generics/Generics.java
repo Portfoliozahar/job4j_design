@@ -63,9 +63,8 @@ public class Generics {
         generics.printBoundedWildCard(second);
         generics.printBoundedWildCard(third);
         System.out.println();
-        /**
-         * generics.printLowerBoundedWildCard(first);
-         */
+        generics.printLowerBoundedWildCard(first);
+
 
         generics.printLowerBoundedWildCard(second);
         /**
